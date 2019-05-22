@@ -1,0 +1,11 @@
+baseURL = "https://yzhernand.github.io/"
+languageCode = "en-us"
+title = "Yozen Hernandez"
+theme = "m10c"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "monokai"
+
+[params]
+  author = "Yozen Hernandez"
+  description = "Bioinformatics guy who programs in Perl, C, and R. Occasionally writes about things."
