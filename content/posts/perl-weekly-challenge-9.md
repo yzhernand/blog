@@ -27,8 +27,6 @@ In this case, if `$n = 5`, then `$root = 316`. Cool, we just skipped uselessly s
 Next, we have to loop until we find a perfect square which has at least `$n` unique digits. So I wrote my loop like so:
 
 ```perl
-my $found;
-
 while ( 1 ) {
 
     # Use positive lookahead to get rid of duplicate digits
