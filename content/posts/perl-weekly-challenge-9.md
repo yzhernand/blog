@@ -14,7 +14,7 @@ So this post will deal with the 9th challenge so far. Check out this challenge, 
 
 > Write a script that finds the first square number that has at least 5 distinct digits. This was proposed by Laurent Rosenfeld.
 
-This was a fun one. In the work I've done in the past, speed was always important. The more we could cut down run time the better. So I brought that mentality here to this challenge, even if the "speedup" was probably not worth and this "optimization" could hardly be called that.
+This was a fun one. In the work I've done in the past, speed was always important. The more we could cut down run time the better. So I brought that mentality here to this challenge, even if the "speedup" was probably not worth it and this "optimization" could hardly be called that.
 
 Anyway, my idea was to just not waste time starting with 1, or 2, or any square root that would not yield at least a 5-digit square. So, for a general case of an n-digit square:
 
@@ -24,7 +24,7 @@ my $root = int( sqrt( 10**( $n - 1 ) ) );
 
 In this case, if `$n = 5`, then `$root = 316`. Cool, we just skipped uselessly squaring `1 .. 315` (and possibly checking the squares to see if we satisfied the challenge condition, depending on how you wrote your code).
 
-Next, we do have to loop until we find a perfect square which has at least `$n` unique digits. So I wrote my loop like so:
+Next, we have to loop until we find a perfect square which has at least `$n` unique digits. So I wrote my loop like so:
 
 ```perl
 my $found;
