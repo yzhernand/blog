@@ -10,7 +10,7 @@ I decided to blog a bit so that I can write about the process that goes into sol
 
 So this post will deal with the 9th challenge so far. Check out this challenge, as well as the Perl Weekly Challenge page, [here](https://perlweeklychallenge.org/blog/perl-weekly-challenge-009/).
 
-# Chellenge #1
+# Challenge #1
 
 > Write a script that finds the first square number that has at least 5 distinct digits. This was proposed by Laurent Rosenfeld.
 
@@ -22,7 +22,7 @@ Anyway, my idea was to just not waste time starting with 1, or 2, or any square 
 my $root = int( sqrt( 10**( $n - 1 ) ) );
 ```
 
-In this case, if `$n = 5`, then `$root = 316`. Cool, we just skipped uselessly squaring `1 .. 315` (and possibly checking the squares to see if we satisfied the challenge condition, depending on how you wrote your code).
+In this case, if `$n = 5`, then ~~`$root = 316`. Cool, we just skipped uselessly squaring `1 .. 315`~~ EDIT: This should be 100. I had manually calculated it without subtracting 1 as in my code above. Oops!/EDIT (and possibly checking the squares to see if we satisfied the challenge condition, depending on how you wrote your code).
 
 Next, we have to loop until we find a perfect square which has at least `$n` unique digits. So I wrote my loop like so:
 
