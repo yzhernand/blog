@@ -1,7 +1,7 @@
 ---
 title: "Perl Weekly Challenge 10: Roman numerals and Jaro-Winkler distance"
 date: 2019-06-02T13:49:47-04:00
-draft: true
+draft: false
 ---
 
 Back at it again with another week of the Perl Weekly Challenge. This time for challenge #10
