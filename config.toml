@@ -1,7 +1,7 @@
 baseURL = "https://yzhernand.github.io/"
 languageCode = "en-us"
 title = "Yozen Hernandez"
-theme = "m10c"
+theme = ["m10c", "reveal-hugo"]
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "monokai"
@@ -9,3 +9,17 @@ pygmentsStyle = "monokai"
 [params]
   author = "Yozen Hernandez"
   description = "Bioinformatics guy who programs in Perl, C, and R. Occasionally writes about things."
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/yzhernand"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/yzhernand"
+
+[outputFormats.Reveal]
+  baseName = "index"
+  mediaType = "text/html"
+  isHTML = true
+
+[params.reveal_hugo]
+  custom_theme = "css/reveal/moon-mod.css"

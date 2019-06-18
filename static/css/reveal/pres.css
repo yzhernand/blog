@@ -1,0 +1,31 @@
+#vntrseeklogop {
+	margin-bottom: 3em;	
+}
+
+#vntrseeklogo {
+	background: #268bd2;
+	color: #FFFFFF;
+	font-size: 3em;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	padding: 10px;
+}
+
+.reveal .spacer {
+	margin-bottom: 1em;	
+}
+
+#acknowledgements {
+	text-align: left;
+	font-size: 60%;
+	column-count: 2;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+}
+.twocolumn {
+	text-align: left;
+	font-size: 60%;
+	column-count: 2;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+}
