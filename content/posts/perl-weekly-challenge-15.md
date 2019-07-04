@@ -142,9 +142,9 @@ say "First 10 weak primes: " . join( ", ", @weak_primes );
 say "First 10 strong primes: " . join( ", ", @strong_primes );
 ```
 
-Oh this is much better: far less code, far less repetition, and I don't even need to memoize. I took advantage of the return value of `<=>` by making a list of the references to the lists I needed in another list, which I called `@which_arr`. The order is important, because I'm using the return value of `<=>` as an index into that array, so a `-1` (less than) result means that the value should go into the `@weak_primes` array, which means that the reference to it needs to be the last element of the array. That may be counterintuitive at first, but a `-1` index means is the same as the last index since negative indices start from the end of the array.
+Oh this is much better: far less code, far less repetition, and I don't even need to memoize. I took advantage of the return value of `<=>` by making a list of the references to the lists I needed, which I called `@which_arr`. The order is important, because I'm using the return value of `<=>` as an index into that array, so a `-1` (less than) result means that the value should go into the `@weak_primes` array, which means that the reference to it needs to be the last element of the array. That may be counterintuitive at first, but a `-1` index is the same as the last index since negative indices start from the end of the array.
 
-Also probably counterintuitive is that the value we save is not the last value in the `@primes` sequence, but the second-to-last value, `$primes[-2]` since that is the last value which can have both to an immediately preceeding and an immediately succeeding value.
+Also probably counterintuitive is that the value we save is not the last value in the `@primes` sequence, but the second-to-last value, `$primes[-2]` since that is the last value which can have both to an immediately preceding and an immediately succeeding value.
 
 See the full solution, [here](https://github.com/manwar/perlweeklychallenge-club/tree/master/challenge-015/yozen-hernandez/perl5/ch-1.pl).
 
@@ -211,7 +211,7 @@ say "Decrypted: $decoded";
 
 I built a hash which mapped uppercase Latin letters to a numeric equivalent, and called that `%tabula` after the term *tabula recta* used by the people actually using this cipher. Now I've got a mapping between letters and numbers which matches the actual mapping used.
 
-Next each function takes it's input, a *message* and a *key*, and splits each of these into arrays so we can iterate over them. A loop iterates over the message, and for each letter in the message, and in the case of encryption we subtract the value of the corresponding letter in the key. Again, since the key is usually shorter, we must use modulo arithmetic dependant on the length of the key to let us wraparound and reuse letters in the key. The new "shifted" value is used as an index into a list of uppercase letters from "A"-"Z", same as when we built the tabula.
+Next each function takes it's input, a *message* and a *key*, and splits each of these into arrays so we can iterate over them. A loop iterates over the message, and for each letter in the message, and in the case of encryption we subtract the value of the corresponding letter in the key. Again, since the key is usually shorter, we must use modulo arithmetic dependent on the length of the key to let us wraparound and reuse letters in the key. The new "shifted" value is used as an index into a list of uppercase letters from "A"-"Z", same as when we built the tabula.
 
 Decryption works much the same, except that instead of subtracting the value obtained from the key, we add it. Knowing that, we could make the code even simpler, at the risk of making the interface a bit clunkier:
 
