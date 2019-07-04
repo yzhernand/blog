@@ -1,5 +1,5 @@
 ---
-title: "Perl Weekly Challenge 15"
+title: "Perl Weekly Challenge 15: More Prime Sequences / Encrypt and Decrypt With the Vigenère Cipher"
 date: 2019-07-01T14:45:21-04:00
 draft: true
 ---
