@@ -211,7 +211,7 @@ say "Decrypted: $decoded";
 
 I built a hash which mapped uppercase Latin letters to a numeric equivalent, and called that `%tabula` after the term *tabula recta* used by the people actually using this cipher. Now I've got a mapping between letters and numbers which matches the actual mapping used.
 
-Next each function takes it's input, a *message* and a *key*, and splits each of these into arrays so we can iterate over them. A loop iterates over the message, and for each letter in the message, and in the case of encryption we subtract the value of the corresponding letter in the key. Again, since the key is usually shorter, we must use modulo arithmetic dependent on the length of the key to let us wraparound and reuse letters in the key. The new "shifted" value is used as an index into a list of uppercase letters from "A"-"Z", same as when we built the tabula.
+Next each function takes it's input, a *message* and a *key*, and splits each of these into arrays so we can iterate over them. A loop iterates over the message, and for each letter in the message we subtract (in the case of encryption) the value of the corresponding letter in the key. Again, since the key is usually shorter, we must use modulo arithmetic dependent on the length of the key to let us wraparound and reuse letters in the key. The new "shifted" value is used as an index into a list of uppercase letters from "A"-"Z", same as when we built the tabula.
 
 Decryption works much the same, except that instead of subtracting the value obtained from the key, we add it. Knowing that, we could make the code even simpler, at the risk of making the interface a bit clunkier:
 
