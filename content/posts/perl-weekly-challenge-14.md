@@ -145,7 +145,7 @@ When I first read the problem statement, I immediately thought of a [graph](http
 
 That takes care of the requirement that the states need to be adjacent. What about searching for words? In the previous challenge, we could just iterate over all words in the dictionary and check them to see if they could be made using the state codes. Here, we would actually need to generate words from the states, given their adjacency, and then check to see if that is a valid word.
 
-Luckily, there is a data structure for that™: the [Trie](https://en.wikipedia.org/wiki/Trie), a search tree which allows for the lookup of words by prefix. It is ideal for applications such as predictive text, where words are suggested to a user based on the first few letters typed so far. We can use this to check if a word we are generating from the graph is in the dictionary. And of course, there is also a Perl module! [`Tree::Trie`](use Tree::Trie).
+Luckily, there is a data structure for that™: the [Trie](https://en.wikipedia.org/wiki/Trie), a search tree which allows for the lookup of words by prefix. It is ideal for applications such as predictive text, where words are suggested to a user based on the first few letters typed so far. We can use this to check if a word we are generating from the graph is in the dictionary. And of course, there is also a Perl module! [`Tree::Trie`](https://metacpan.org/pod/Tree::Trie).
 
 ```perl
 sub get_paths ( $graph, $trie, $vertex, $data, %seen ) {
