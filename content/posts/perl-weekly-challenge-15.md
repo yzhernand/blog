@@ -4,7 +4,7 @@ date: 2019-07-01T14:45:21-04:00
 draft: false
 ---
 
-This week's [Perl Weekly Challenge](https://perlweeklychallenge.org/blog/perl-weekly-challenge-015/) touched on prime number sequences again, and some old-school cryptography (which was pretty exciting). This post is divided into two parts, one for each challenge. Find part 2 on [dev.to](https://dev.to/yzhernand/perl-weekly-challenge-15-part-2-encrypting-decrypting-with-the-vigenere-cipher-4a3b) or [my blog](https://yzhernand.github.io/posts/perl-weekly-challenge-15-part2) on Github Pages.
+This week's [Perl Weekly Challenge](https://perlweeklychallenge.org/blog/perl-weekly-challenge-015/) touched on prime number sequences again, and some old-school cryptography (which was pretty exciting). This post is divided into two parts, one for each challenge. Find part 2 on [dev.to](https://dev.to/yzhernand/perl-weekly-challenge-15-part-2-encrypting-decrypting-with-the-vigenere-cipher-l2) or [my blog](https://yzhernand.github.io/posts/perl-weekly-challenge-15-part2) on Github Pages.
 
 # Challenge 1
 

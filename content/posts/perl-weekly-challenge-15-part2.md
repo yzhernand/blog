@@ -4,7 +4,7 @@ date: 2019-07-04T23:44:35-04:00
 draft: false
 ---
 
-Welcome to the second part of my posts on this week's [Perl Weekly Challenge](https://perlweeklychallenge.org/blog/perl-weekly-challenge-015/). You can find the first part of this post on either [dev.to](https://dev.to/yzhernand/perl-weekly-challenge-15-part-1-finding-strong-and-weak-primes-with-perl-416n) or my [personal blog](https://yzhernand.github.io/posts/perl-weekly-challenge-15/).
+Welcome to the second part of my posts on this week's [Perl Weekly Challenge](https://perlweeklychallenge.org/blog/perl-weekly-challenge-015/). You can find the first part of this post on either [dev.to](https://dev.to/yzhernand/perl-weekly-challenge-15-part-1-finding-strong-and-weak-primes-with-perl-5c65) or my [personal blog](https://yzhernand.github.io/posts/perl-weekly-challenge-15/).
 
 # Challenge 2
 
