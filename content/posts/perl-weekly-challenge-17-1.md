@@ -1,7 +1,7 @@
 ---
 title: "Perl Weekly Challenge 17: The Ackermann function"
 date: 2019-07-19T07:07:53-04:00
-draft: true
+draft: false
 ---
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
