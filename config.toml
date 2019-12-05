@@ -6,6 +6,9 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "monokai"
 
+[markup]
+defaultMarkdownHandler = "blackfriday"
+
 [params]
   author = "Yozen Hernandez"
   description = "Bioinformatics guy who programs in Perl, C, and R. Occasionally writes about things."

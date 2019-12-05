@@ -1,8 +1,7 @@
 +++
 outputs = ["Reveal"]
-baseName = "reveal"
 title = "Presentation"
-date = 2019-06-17T18:16:15-04:00
+date = 2019-12-02T18:16:15-04:00
 draft = false
 +++
 
@@ -766,27 +765,6 @@ draft = false
         * Detectable range (read length, low copy number)
     </script>
 </section>
-<section data-markdown style="text-align: center">
-    <script type="text/template">
-        ![mlZ Observed distributions](../images/phd_figs/mlz_distrs.png) <!-- .element: style="width: 76%; height: auto; border: 0px; margin-top: -2%" -->
-
-        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
-    </script>
-</section>
-<section data-markdown style="text-align: center">
-    <script type="text/template">
-        ![mlZ Decision Tree](../images/phd_figs/mlz_dt.png) <!-- .element: style="width: 76%; height: auto; border: 0px; margin-top: -2%" -->
-
-        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
-    </script>
-</section>
-<section data-markdown style="text-align: center">
-    <script type="text/template">
-        ![MLZ Improvement](../images/phd_figs/mlz_improvement.png) <!-- .element: style="width: 80%; height: auto; border: 0px; margin-top: -2%" -->
-
-        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
-    </script>
-</section>
 <section data-markdown style="text-align: left; margin-left: 5%;">
     <script type="text/template">
         # Applications
@@ -902,4 +880,25 @@ draft = false
     <br>
     <p>Demo VNTRDB</p>
     <p class="spacer"><a href="http://orca.bu.edu/vntrdb">http://orca.bu.edu/vntrdb</a></p>
+</section>
+<section data-markdown style="text-align: center">
+    <script type="text/template">
+        ![mlZ Observed distributions](../images/phd_figs/mlz_distrs.png) <!-- .element: style="width: 76%; height: auto; border: 0px; margin-top: -2%" -->
+
+        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
+    </script>
+</section>
+<section data-markdown style="text-align: center">
+    <script type="text/template">
+        ![mlZ Decision Tree](../images/phd_figs/mlz_dt.png) <!-- .element: style="width: 76%; height: auto; border: 0px; margin-top: -2%" -->
+
+        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
+    </script>
+</section>
+<section data-markdown style="text-align: center">
+    <script type="text/template">
+        ![MLZ Improvement](../images/phd_figs/mlz_improvement.png) <!-- .element: style="width: 80%; height: auto; border: 0px; margin-top: -2%" -->
+
+        Credit: Marzie Rasekh <!-- .element: style="font-size: 0.8em;" -->
+    </script>
 </section>
